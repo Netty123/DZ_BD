@@ -14,14 +14,14 @@ VALUES
 ('Рэп'),
 ('Фанк');
 
-INSERT INTO albums(name_albums)
+INSERT INTO albums(name_albums, release_date)
 VALUES
-('До того как стал известен'),
-('Last One'),
-('Снова твой цвет'),
-('В тишине тоскую'),
-('Олимпос'),
-('Медляк');
+('До того как стал известен', 2019),
+('Last One', 2022),
+('Снова твой цвет',2020),
+('В тишине тоскую', 2019),
+('Олимпос', 2020),
+('Медляк', 2017);
 
 INSERT INTO tracks(track_name, album, duration)
 VALUES
