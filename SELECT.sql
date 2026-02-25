@@ -19,12 +19,15 @@ WHERE name NOT LIKE '% %'
 
 -- 5 --
 SELECT track_name FROM tracks
-WHERE track_name LIKE '%Мой%'
+WHERE LOWER(track_name) ILIKE '% my %' 
+   OR LOWER(track_name) = 'my'
+   OR LOWER(track_name) LIKE 'my %'
+   OR LOWER(track_name) LIKE '% my';
 
 -- Задание №3 --
 
 -- 1 --
-SELECT genre.genre_name, COUNT(performers_genre.id_performers) FROM genre
+SELECT genre.genre_name, COUNT(performers_genre.id_performer) FROM genre
 LEFT JOIN performers_genre ON genre.id = performers_genre.id_genre
 GROUP BY genre.id, genre.genre_name;
 
