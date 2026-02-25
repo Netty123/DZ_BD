@@ -32,6 +32,33 @@ VALUES
 ('Огонь', 5, 163),
 ('Алёша', 5, 444);
 
+INSERT INTO tracks (track_name)
+ VALUES
+('my own'),
+('own my'),
+('my my'),
+('oh my god'),
+('my'),
+('my song'),
+('song my'),
+('this is my world'),
+('my life my rules'),
+('my love'),
+('myself'),
+('by myself'),
+('bemy self'),
+('myself by'),
+('by myself by'),
+('beemy'),
+('premyne'),
+('myth'),
+('mystery'),
+('myopic'),
+('myeloma'),
+('amyloid'),
+('dynasty'),  
+('mythical');
+
 INSERT INTO collections(collection_name, year_of_release)
 VALUES
 ('Хиты 2018', 2018),
@@ -46,7 +73,7 @@ VALUES
 INSERT INTO performers_albums(id_performer, id_album)
 VALUES (1, 1), (1, 2), (2, 3), (2, 4), (4, 5), (4,6);
 
-INSERT INTO performers_genre(id_performers, id_genre)
+INSERT INTO performers_genre(id_performer, id_genre)
 VALUES (1, 2), (1, 4), (2, 1), (2, 2), (3, 1), (3, 2), (4, 1), (4, 2), (5, 1), (5, 2);
 
 INSERT INTO collections_track(id_collection, id_track)
